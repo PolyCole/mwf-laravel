@@ -34977,10 +34977,12 @@ __webpack_require__.r(__webpack_exports__);
 
 var routes = [{
   path: '/',
-  component: _views_Home_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+  component: _views_Home_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
+  name: 'home'
 }, {
   path: '/about',
-  component: _views_About_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
+  component: _views_About_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
+  name: 'name'
 }];
 /* harmony default export */ __webpack_exports__["default"] = (new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
   routes: routes

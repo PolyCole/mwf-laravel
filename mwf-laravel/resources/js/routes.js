@@ -6,11 +6,13 @@ import About from './views/About.vue'
 let routes = [
     {
         path: '/',
-        component: Home
+        component: Home,
+        name: 'home'
     },
     {
         path:'/about',
-        component: About
+        component: About,
+        name: 'name'
     }
 ]
 
