@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Bulletin Board</title>
 </head>
 <body>
@@ -21,6 +22,9 @@
         <router-link to="/">Home</router-link>
         <router-link to="/about">About</router-link>
         <router-link to="/posts">Posts</router-link>
+        <router-link to="/login">Login</router-link>
+        <router-link to="/register">Register</router-link>
+
 
         <!-- Alternative Syntax: -->
     {{--    <router-link :to="{ name: 'about' }">About</router-link>--}}

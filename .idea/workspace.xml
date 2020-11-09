@@ -1,18 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c9c04bc1-e862-48a8-bb39-ca32797fd6fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mwf-laravel/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mwf-laravel/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mwf-laravel/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mwf-laravel/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mwf-laravel/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mwf-laravel/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/views/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/views/Register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/.idea/mwf-laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/.idea/mwf-laravel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/js/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/js/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/views/layouts/master.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,11 +69,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604937630240</updated>
-      <workItem from="1604937631324" duration="1905000" />
+      <workItem from="1604937631324" duration="7552000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="613" y="172" width="762" height="775" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604941280481">
+      <screen x="72" y="27" width="2808" height="1053" />
+    </state>
+    <state x="613" y="172" width="762" height="775" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/72.27.2808.1053@72.27.2808.1053" timestamp="1604941280481" />
   </component>
 </project>
