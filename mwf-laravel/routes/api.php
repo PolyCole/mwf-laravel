@@ -3,6 +3,7 @@
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,6 +41,17 @@ Route::delete('posts/{id}', function($id) {
     Post::find($id)->delete();
 
     return 204;
+});
+
+Route::group([
+    'prefix' => 'auth',
+    'namespace' => 'App\Http\Controllers'
+], function ($router) {
+    Route::post('register', 'AuthController@register');
+    Route::post('login', 'AuthController@login');
+    Route::post('logout', 'AuthController@logout');
+    Route::post('refresh', 'AuthController@refresh');
+    Route::post('me', 'AuthController@me');
 });
 
 //Route::get('articles', 'ArticleController@index');
