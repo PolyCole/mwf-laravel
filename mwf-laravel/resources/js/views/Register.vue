@@ -13,19 +13,31 @@
                             </p>
                         </div>
                         <div class="form-group row">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" class="form-control" v-validate="'required'" v-model="formRegister.name" placeholder="Name" id="name">
-                            <span v-if="errors.has('name')" class="invalid-feedback" role="alert">{{ errors.first('name') }}</span>
+                            <ValidationProvider name="Name" rules="required">
+                                <div slot-scope="{ errors }">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" class="form-control" v-model="formRegister.name" placeholder="Name" id="name">
+                                    <span class="invalid-feedback" role="alert">{{ errors[0] }}</span>
+                                </div>
+                            </ValidationProvider>
                         </div>
                         <div class="form-group row">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" v-validate="'required|email'" class="form-control" v-model="formRegister.email" placeholder="Email address" id="email">
-                            <span v-if="errors.has('email')" class="invalid-feedback" role="alert">{{ errors.first('email') }}</span>
+                            <ValidationProvider name="email" rules="required|email">
+                                <div slot-scope="{ errors }">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" class="form-control" v-model="formRegister.email" placeholder="Email address" id="email">
+                                    <span class="invalid-feedback" role="alert">{{ errors[0] }}</span>
+                                </div>
+                            </ValidationProvider>
                         </div>
                         <div class="form-group row">
-                            <label for="password">Password</label>
-                            <input type="password" name="password" class="form-control" v-validate="'required|min:6'" v-model="formRegister.password" placeholder="password" id="password">
-                            <span v-if="errors.has('password')" class="invalid-feedback" role="alert">{{ errors.first('password') }}</span>
+                            <ValidationProvider name="password" rules="required">
+                                <div slot-scope="{ errors }">
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" class="form-control" v-model="formRegister.password" placeholder="password" id="password">
+                                    <span class="invalid-feedback" role="alert">{{ errors[0] }}</span>
+                                </div>
+                            </ValidationProvider>
                         </div>
                         <div class="form-group row">
                             <input type="submit" value="Register" class="btn btn-outline-primary ml-auto">

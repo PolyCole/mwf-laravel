@@ -48,10 +48,11 @@ Route::group([
     'namespace' => 'App\Http\Controllers'
 ], function ($router) {
     Route::post('register', 'AuthController@register');
-    Route::post('login', 'AuthController@login');
+    Route::post('login', 'AuthController@login')->name('login');
     Route::post('logout', 'AuthController@logout');
     Route::post('refresh', 'AuthController@refresh');
-    Route::post('me', 'AuthController@me');
+    Route::get('user-profile', 'AuthController@userProfile');
+
 });
 
 //Route::get('articles', 'ArticleController@index');
