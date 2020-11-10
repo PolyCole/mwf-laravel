@@ -15,15 +15,11 @@
 <body>
 <div class="wrapper">
     <div class="container header">
-        <a href="/"><h1>Bulletin Board</h1></a>
+        <div class="container">
+            <a style="text-decoration: none; color: #000" href="/"><h1>Bulletin Board</h1></a>
+        </div>
     </div>
     <div id="app">
-        <!-- We use router-links and not <a> because anchor tags come with an implicit page-reload. -->
-        <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
-        <router-link to="/posts">Posts</router-link>
-        <router-link to="/login">Login</router-link>
-        <router-link to="/register">Register</router-link>
 
 
         <!-- Alternative Syntax: -->

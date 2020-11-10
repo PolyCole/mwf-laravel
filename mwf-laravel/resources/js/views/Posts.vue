@@ -1,7 +1,8 @@
 <template>
     <div class="container">
+        <h1>Posts</h1>
+        <router-link to="/new" class="btn btn-primary">New Post</router-link>
         <div class="row">
-            <h1>Here are the posts:</h1>
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="list-group">

@@ -22,13 +22,15 @@
     <list default="true" id="c9c04bc1-e862-48a8-bb39-ca32797fd6fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mwf-laravel/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mwf-laravel/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/js/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/js/views/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/views/NewPost.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/js/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/views/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/js/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/views/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/js/views/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/views/Register.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mwf-laravel/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mwf-laravel/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/js/views/Posts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/views/Posts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/views/layouts/master.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604937630240</updated>
       <workItem from="1604937631324" duration="7941000" />
-      <workItem from="1605020430796" duration="5591000" />
+      <workItem from="1605020430796" duration="9788000" />
     </task>
     <servers />
   </component>

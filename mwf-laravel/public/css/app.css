@@ -30,3 +30,8 @@
 body {
   background-color: #212121 !important;
 }
+
+.btn {
+  margin-left: 3px;
+  margin-right: 3px;
+}

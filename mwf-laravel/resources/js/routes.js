@@ -1,6 +1,6 @@
 import VueRouter from 'vue-router';
 import Home from './views/Home.vue';
-import About from './views/About.vue';
+import NewPost from './views/NewPost.vue';
 import Posts from './views/Posts.vue';
 import Login from './views/Login.vue';
 import Register from './views/Register.vue';
@@ -13,9 +13,9 @@ let routes = [
         name: 'home'
     },
     {
-        path:'/about',
-        component: About,
-        name: 'about'
+        path:'/new',
+        component: NewPost,
+        name: 'new'
     },
     {
         path:'/posts',
@@ -31,7 +31,7 @@ let routes = [
         path:'/register',
         component: Register,
         name: 'register'
-    }
+    },
 ]
 
 export default new VueRouter({

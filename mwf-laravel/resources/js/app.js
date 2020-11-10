@@ -40,5 +40,8 @@ const store = new Vuex.Store(storeData);
 new Vue({
     el: '#app',
     router: router,
-    store: store
+    store: store,
+    data: {
+        defaults: "anonymous"
+    }
 });
