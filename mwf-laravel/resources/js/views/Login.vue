@@ -29,15 +29,6 @@
                                 <p class="error">{{ errors[0] }}</p>
                             </div>
                         </ValidationProvider>
-
-<!--                        <div class="form-group row">-->
-<!--                            <label for="email">Email</label>-->
-<!--                            <input type="email" class="form-control" v-model="formLogin.email" placeholder="Email address" id="email">-->
-<!--                        </div>-->
-<!--                        <div class="form-group row">-->
-<!--                            <label for="password">Password</label>-->
-<!--                            <input type="password" class="form-control" v-model="formLogin.password" placeholder="password" id="password">-->
-<!--                        </div>-->
                         <div class="form-group row">
                             <input type="submit" value="Login" class="btn btn-outline-primary ml-auto">
                         </div>

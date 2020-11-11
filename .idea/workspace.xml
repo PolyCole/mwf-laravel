@@ -21,16 +21,16 @@
   <component name="ChangeListManager">
     <list default="true" id="c9c04bc1-e862-48a8-bb39-ca32797fd6fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mwf-laravel/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mwf-laravel/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/app/Http/Controllers/PostsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mwf-laravel/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/js/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/js/views/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/views/NewPost.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/js/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/views/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/js/views/Posts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/views/Posts.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/js/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/js/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/views/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/resources/js/views/NewPost.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/resources/js/views/NewPost.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mwf-laravel/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/mwf-laravel/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +57,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -69,6 +70,7 @@
       <updated>1604937630240</updated>
       <workItem from="1604937631324" duration="7941000" />
       <workItem from="1605020430796" duration="9788000" />
+      <workItem from="1605061797427" duration="3165000" />
     </task>
     <servers />
   </component>
@@ -96,5 +98,9 @@
       <screen x="72" y="27" width="2808" height="1053" />
     </state>
     <state x="613" y="172" width="762" height="775" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/72.27.2808.1053@72.27.2808.1053" timestamp="1604941280481" />
+    <state x="659" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1605064804321">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="659" y="255" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053/1920.0.960.540@72.27.1848.1053" timestamp="1605064804321" />
   </component>
 </project>

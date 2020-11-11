@@ -11,6 +11,10 @@ window.Vue = Vue;
 Vue.use(VueRouter);
 Vue.use(Vuex);
 
+import VueFormulate from '@braid/vue-formulate'
+
+Vue.use(VueFormulate)
+
 import { extend } from 'vee-validate';
 import { required, email } from 'vee-validate/dist/rules';
 

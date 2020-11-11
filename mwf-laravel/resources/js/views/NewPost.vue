@@ -6,29 +6,24 @@
                     <h3>New Post</h3>
                 </div>
                 <div class="card-body">
-                    <form @submit.prevent="authenticate">
-                        <div class="form-group row" v-if="authError">
-                            <p class="error">
-                                {{ authError }}
-                            </p>
-                        </div>
-
+                    <form @submit.prevent="sendMessage">
                         <ValidationProvider name="username" rules="required">
                             <div slot-scope="{ errors }">
                                 <label for="username">Username</label>
                                 <input type="username" class="form-control"
-                                       id="username" value="anonymous">
+                                       id="username" value="anonymous" v-model="messageContent.user_name">
                                 <p class="error">{{ errors[0] }}</p>
                             </div>
                         </ValidationProvider>
 
-                        <ValidationProvider name="message" rules="required">
+                        <ValidationProvider name="message" rules="required" v-model="messageContent.message">
                             <div slot-scope="{ errors }">
-                                <label for="message">Message</label>
-                                <textarea type="text" class="form-control"
-                                       placeholder="Write your message here."
-                                          id="message"></textarea>
-                                <p class="error">{{ errors[0] }}</p>
+                                <FormulateInput
+                                    type="textarea"
+                                    v-model="messageContent.message"
+                                    label="Message"
+                                    validation="required"
+                                />
                             </div>
                         </ValidationProvider>
 
@@ -43,9 +38,32 @@
 </template>
 
 <script>
+import {newPost} from '../auth';
 
 export default {
-    name: 'NewPost'
+    data() {
+        return{
+            messageContent: {
+                user_name: '',
+                message: ''
+            },
+            error: null
+        }
+    },
+    methods: {
+        sendMessage() {
+            // this.$store.dispatch('newPost');
+            console.log(this.$data.messageContent);
+            newPost(this.$data.messageContent)
+            .then(res => {
+                // this.$store.commit("newPostSuccess", res);
+                this.$router.push({path: '/'});
+            })
+            .catch(error => {
+                // this.$store.commit("postFailed", {error});
+            })
+        }
+    }
 }
 </script>
 

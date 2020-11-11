@@ -22,6 +22,18 @@ export function login(credentials){
     })
 }
 
+export function newPost(content) {
+    return new Promise((res, rej)=> {
+        axios.post('/api/posts', content)
+            .then(response => {
+                res(response.data);
+            })
+            .catch(err => {
+                rej("Something went wrong sending that post.")
+            })
+    });
+}
+
 export function getLoggedinUser(){
     const userStr = localStorage.getItem('user');
 
