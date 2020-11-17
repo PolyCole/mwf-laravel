@@ -1,6 +1,6 @@
 <template>
     <div class="login row justify-content-center">
-        <div class="col-md-6">
+        <div class="col-md-6"  style="margin-bottom: 30px;">
             <div v-if="registeredUser" class="text-success">Thank you {{registeredUser.name}}.You can now login</div>
             <div class="card">
                 <div class="card-header">

@@ -23845,153 +23845,157 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "login row justify-content-center" }, [
-    _c("div", { staticClass: "col-md-6" }, [
-      _vm.registeredUser
-        ? _c("div", { staticClass: "text-success" }, [
-            _vm._v(
-              "Thank you " +
-                _vm._s(_vm.registeredUser.name) +
-                ".You can now login"
+    _c(
+      "div",
+      { staticClass: "col-md-6", staticStyle: { "margin-bottom": "30px" } },
+      [
+        _vm.registeredUser
+          ? _c("div", { staticClass: "text-success" }, [
+              _vm._v(
+                "Thank you " +
+                  _vm._s(_vm.registeredUser.name) +
+                  ".You can now login"
+              )
+            ])
+          : _vm._e(),
+        _vm._v(" "),
+        _c("div", { staticClass: "card" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c(
+              "form",
+              {
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    return _vm.authenticate($event)
+                  }
+                }
+              },
+              [
+                _vm.authError
+                  ? _c("div", { staticClass: "form-group row" }, [
+                      _c("p", { staticClass: "error" }, [
+                        _vm._v(
+                          "\n                            " +
+                            _vm._s(_vm.authError) +
+                            "\n                        "
+                        )
+                      ])
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _c("ValidationProvider", {
+                  attrs: { name: "email", rules: "required|email" },
+                  scopedSlots: _vm._u([
+                    {
+                      key: "default",
+                      fn: function(ref) {
+                        var errors = ref.errors
+                        return _c("div", {}, [
+                          _c("label", { attrs: { for: "email" } }, [
+                            _vm._v("Email")
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.formLogin.email,
+                                expression: "formLogin.email"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "email",
+                              placeholder: "Email address",
+                              id: "email"
+                            },
+                            domProps: { value: _vm.formLogin.email },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.formLogin,
+                                  "email",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("p", { staticClass: "error" }, [
+                            _vm._v(_vm._s(errors[0]))
+                          ])
+                        ])
+                      }
+                    }
+                  ])
+                }),
+                _vm._v(" "),
+                _c("ValidationProvider", {
+                  attrs: { name: "password", rules: "required" },
+                  scopedSlots: _vm._u([
+                    {
+                      key: "default",
+                      fn: function(ref) {
+                        var errors = ref.errors
+                        return _c("div", {}, [
+                          _c("label", { attrs: { for: "password" } }, [
+                            _vm._v("Password")
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.formLogin.password,
+                                expression: "formLogin.password"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "password",
+                              placeholder: "password",
+                              id: "password"
+                            },
+                            domProps: { value: _vm.formLogin.password },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.formLogin,
+                                  "password",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("p", { staticClass: "error" }, [
+                            _vm._v(_vm._s(errors[0]))
+                          ])
+                        ])
+                      }
+                    }
+                  ])
+                }),
+                _vm._v(" "),
+                _vm._m(1)
+              ],
+              1
             )
           ])
-        : _vm._e(),
-      _vm._v(" "),
-      _c("div", { staticClass: "card" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c(
-            "form",
-            {
-              on: {
-                submit: function($event) {
-                  $event.preventDefault()
-                  return _vm.authenticate($event)
-                }
-              }
-            },
-            [
-              _vm.authError
-                ? _c("div", { staticClass: "form-group row" }, [
-                    _c("p", { staticClass: "error" }, [
-                      _vm._v(
-                        "\n                            " +
-                          _vm._s(_vm.authError) +
-                          "\n                        "
-                      )
-                    ])
-                  ])
-                : _vm._e(),
-              _vm._v(" "),
-              _c("ValidationProvider", {
-                attrs: { name: "email", rules: "required|email" },
-                scopedSlots: _vm._u([
-                  {
-                    key: "default",
-                    fn: function(ref) {
-                      var errors = ref.errors
-                      return _c("div", {}, [
-                        _c("label", { attrs: { for: "email" } }, [
-                          _vm._v("Email")
-                        ]),
-                        _vm._v(" "),
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.formLogin.email,
-                              expression: "formLogin.email"
-                            }
-                          ],
-                          staticClass: "form-control",
-                          attrs: {
-                            type: "email",
-                            placeholder: "Email address",
-                            id: "email"
-                          },
-                          domProps: { value: _vm.formLogin.email },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.$set(
-                                _vm.formLogin,
-                                "email",
-                                $event.target.value
-                              )
-                            }
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "error" }, [
-                          _vm._v(_vm._s(errors[0]))
-                        ])
-                      ])
-                    }
-                  }
-                ])
-              }),
-              _vm._v(" "),
-              _c("ValidationProvider", {
-                attrs: { name: "password", rules: "required" },
-                scopedSlots: _vm._u([
-                  {
-                    key: "default",
-                    fn: function(ref) {
-                      var errors = ref.errors
-                      return _c("div", {}, [
-                        _c("label", { attrs: { for: "password" } }, [
-                          _vm._v("Password")
-                        ]),
-                        _vm._v(" "),
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.formLogin.password,
-                              expression: "formLogin.password"
-                            }
-                          ],
-                          staticClass: "form-control",
-                          attrs: {
-                            type: "password",
-                            placeholder: "password",
-                            id: "password"
-                          },
-                          domProps: { value: _vm.formLogin.password },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.$set(
-                                _vm.formLogin,
-                                "password",
-                                $event.target.value
-                              )
-                            }
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "error" }, [
-                          _vm._v(_vm._s(errors[0]))
-                        ])
-                      ])
-                    }
-                  }
-                ])
-              }),
-              _vm._v(" "),
-              _vm._m(1)
-            ],
-            1
-          )
         ])
-      ])
-    ])
+      ]
+    )
   ])
 }
 var staticRenderFns = [
@@ -24037,120 +24041,124 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "login row justify-content-center" }, [
-    _c("div", { staticClass: "col-md-6" }, [
-      _c("div", { staticClass: "card" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c(
-            "form",
-            {
-              on: {
-                submit: function($event) {
-                  $event.preventDefault()
-                  return _vm.sendMessage($event)
+    _c(
+      "div",
+      { staticClass: "col-md-6", staticStyle: { "margin-bottom": "30px" } },
+      [
+        _c("div", { staticClass: "card" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c(
+              "form",
+              {
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    return _vm.sendMessage($event)
+                  }
                 }
-              }
-            },
-            [
-              _c("ValidationProvider", {
-                attrs: { name: "username", rules: "required" },
-                scopedSlots: _vm._u([
-                  {
-                    key: "default",
-                    fn: function(ref) {
-                      var errors = ref.errors
-                      return _c("div", {}, [
-                        _c("label", { attrs: { for: "username" } }, [
-                          _vm._v("Username")
-                        ]),
-                        _vm._v(" "),
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.messageContent.user_name,
-                              expression: "messageContent.user_name"
-                            }
-                          ],
-                          staticClass: "form-control",
-                          attrs: {
-                            type: "username",
-                            id: "username",
-                            value: "anonymous"
-                          },
-                          domProps: { value: _vm.messageContent.user_name },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
+              },
+              [
+                _c("ValidationProvider", {
+                  attrs: { name: "username", rules: "required" },
+                  scopedSlots: _vm._u([
+                    {
+                      key: "default",
+                      fn: function(ref) {
+                        var errors = ref.errors
+                        return _c("div", {}, [
+                          _c("label", { attrs: { for: "username" } }, [
+                            _vm._v("Username")
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.messageContent.user_name,
+                                expression: "messageContent.user_name"
                               }
-                              _vm.$set(
-                                _vm.messageContent,
-                                "user_name",
-                                $event.target.value
-                              )
-                            }
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "error" }, [
-                          _vm._v(_vm._s(errors[0]))
-                        ])
-                      ])
-                    }
-                  }
-                ])
-              }),
-              _vm._v(" "),
-              _c("ValidationProvider", {
-                attrs: { name: "message", rules: "required" },
-                scopedSlots: _vm._u([
-                  {
-                    key: "default",
-                    fn: function(ref) {
-                      var errors = ref.errors
-                      return _c(
-                        "div",
-                        {},
-                        [
-                          _c("FormulateInput", {
+                            ],
+                            staticClass: "form-control",
                             attrs: {
-                              type: "textarea",
-                              label: "Message",
-                              validation: "required"
+                              type: "username",
+                              id: "username",
+                              value: "anonymous"
                             },
-                            model: {
-                              value: _vm.messageContent.message,
-                              callback: function($$v) {
-                                _vm.$set(_vm.messageContent, "message", $$v)
-                              },
-                              expression: "messageContent.message"
+                            domProps: { value: _vm.messageContent.user_name },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.messageContent,
+                                  "user_name",
+                                  $event.target.value
+                                )
+                              }
                             }
-                          })
-                        ],
-                        1
-                      )
+                          }),
+                          _vm._v(" "),
+                          _c("p", { staticClass: "error" }, [
+                            _vm._v(_vm._s(errors[0]))
+                          ])
+                        ])
+                      }
                     }
+                  ])
+                }),
+                _vm._v(" "),
+                _c("ValidationProvider", {
+                  attrs: { name: "message", rules: "required" },
+                  scopedSlots: _vm._u([
+                    {
+                      key: "default",
+                      fn: function(ref) {
+                        var errors = ref.errors
+                        return _c(
+                          "div",
+                          {},
+                          [
+                            _c("FormulateInput", {
+                              attrs: {
+                                type: "textarea",
+                                label: "Message",
+                                validation: "required"
+                              },
+                              model: {
+                                value: _vm.messageContent.message,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.messageContent, "message", $$v)
+                                },
+                                expression: "messageContent.message"
+                              }
+                            })
+                          ],
+                          1
+                        )
+                      }
+                    }
+                  ]),
+                  model: {
+                    value: _vm.messageContent.message,
+                    callback: function($$v) {
+                      _vm.$set(_vm.messageContent, "message", $$v)
+                    },
+                    expression: "messageContent.message"
                   }
-                ]),
-                model: {
-                  value: _vm.messageContent.message,
-                  callback: function($$v) {
-                    _vm.$set(_vm.messageContent, "message", $$v)
-                  },
-                  expression: "messageContent.message"
-                }
-              }),
-              _vm._v(" "),
-              _vm._m(1)
-            ],
-            1
-          )
+                }),
+                _vm._v(" "),
+                _vm._m(1)
+              ],
+              1
+            )
+          ])
         ])
-      ])
-    ])
+      ]
+    )
   ])
 }
 var staticRenderFns = [
@@ -24203,7 +24211,11 @@ var render = function() {
       _vm._v(" "),
       _c(
         "router-link",
-        { staticClass: "btn btn-primary", attrs: { to: "/new" } },
+        {
+          staticClass: "btn btn-primary",
+          staticStyle: { "margin-bottom": "16px" },
+          attrs: { to: "/new" }
+        },
         [_vm._v("New Post")]
       ),
       _vm._v(" "),
@@ -24268,232 +24280,236 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "login row justify-content-center" }, [
-    _c("div", { staticClass: "col-md-6" }, [
-      _c("div", { staticClass: "card" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c(
-            "form",
-            {
-              on: {
-                submit: function($event) {
-                  $event.preventDefault()
-                  return _vm.register($event)
+    _c(
+      "div",
+      { staticClass: "col-md-6", staticStyle: { "margin-bottom": "30px" } },
+      [
+        _c("div", { staticClass: "card" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c(
+              "form",
+              {
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    return _vm.register($event)
+                  }
                 }
-              }
-            },
-            [
-              _vm.regError
-                ? _c("div", { staticClass: "form-group row" }, [
-                    _c("p", { staticClass: "error" }, [
-                      _vm._v(
-                        "\n                            " +
-                          _vm._s(_vm.regError) +
-                          "\n                        "
-                      )
+              },
+              [
+                _vm.regError
+                  ? _c("div", { staticClass: "form-group row" }, [
+                      _c("p", { staticClass: "error" }, [
+                        _vm._v(
+                          "\n                            " +
+                            _vm._s(_vm.regError) +
+                            "\n                        "
+                        )
+                      ])
                     ])
-                  ])
-                : _vm._e(),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "form-group row" },
-                [
-                  _c("ValidationProvider", {
-                    attrs: { name: "Name", rules: "required" },
-                    scopedSlots: _vm._u([
-                      {
-                        key: "default",
-                        fn: function(ref) {
-                          var errors = ref.errors
-                          return _c("div", {}, [
-                            _c("label", { attrs: { for: "name" } }, [
-                              _vm._v("Name")
-                            ]),
-                            _vm._v(" "),
-                            _c("input", {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.formRegister.name,
-                                  expression: "formRegister.name"
-                                }
-                              ],
-                              staticClass: "form-control",
-                              attrs: {
-                                type: "text",
-                                name: "name",
-                                placeholder: "Name",
-                                id: "name"
-                              },
-                              domProps: { value: _vm.formRegister.name },
-                              on: {
-                                input: function($event) {
-                                  if ($event.target.composing) {
-                                    return
+                  : _vm._e(),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "form-group row" },
+                  [
+                    _c("ValidationProvider", {
+                      attrs: { name: "Name", rules: "required" },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "default",
+                          fn: function(ref) {
+                            var errors = ref.errors
+                            return _c("div", {}, [
+                              _c("label", { attrs: { for: "name" } }, [
+                                _vm._v("Name")
+                              ]),
+                              _vm._v(" "),
+                              _c("input", {
+                                directives: [
+                                  {
+                                    name: "model",
+                                    rawName: "v-model",
+                                    value: _vm.formRegister.name,
+                                    expression: "formRegister.name"
                                   }
-                                  _vm.$set(
-                                    _vm.formRegister,
-                                    "name",
-                                    $event.target.value
-                                  )
-                                }
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c(
-                              "span",
-                              {
-                                staticClass: "invalid-feedback",
-                                attrs: { role: "alert" }
-                              },
-                              [_vm._v(_vm._s(errors[0]))]
-                            )
-                          ])
-                        }
-                      }
-                    ])
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "form-group row" },
-                [
-                  _c("ValidationProvider", {
-                    attrs: { name: "email", rules: "required|email" },
-                    scopedSlots: _vm._u([
-                      {
-                        key: "default",
-                        fn: function(ref) {
-                          var errors = ref.errors
-                          return _c("div", {}, [
-                            _c("label", { attrs: { for: "email" } }, [
-                              _vm._v("Email")
-                            ]),
-                            _vm._v(" "),
-                            _c("input", {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.formRegister.email,
-                                  expression: "formRegister.email"
-                                }
-                              ],
-                              staticClass: "form-control",
-                              attrs: {
-                                type: "email",
-                                name: "email",
-                                placeholder: "Email address",
-                                id: "email"
-                              },
-                              domProps: { value: _vm.formRegister.email },
-                              on: {
-                                input: function($event) {
-                                  if ($event.target.composing) {
-                                    return
+                                ],
+                                staticClass: "form-control",
+                                attrs: {
+                                  type: "text",
+                                  name: "name",
+                                  placeholder: "Name",
+                                  id: "name"
+                                },
+                                domProps: { value: _vm.formRegister.name },
+                                on: {
+                                  input: function($event) {
+                                    if ($event.target.composing) {
+                                      return
+                                    }
+                                    _vm.$set(
+                                      _vm.formRegister,
+                                      "name",
+                                      $event.target.value
+                                    )
                                   }
-                                  _vm.$set(
-                                    _vm.formRegister,
-                                    "email",
-                                    $event.target.value
-                                  )
                                 }
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c(
-                              "span",
-                              {
-                                staticClass: "invalid-feedback",
-                                attrs: { role: "alert" }
-                              },
-                              [_vm._v(_vm._s(errors[0]))]
-                            )
-                          ])
-                        }
-                      }
-                    ])
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "form-group row" },
-                [
-                  _c("ValidationProvider", {
-                    attrs: { name: "password", rules: "required" },
-                    scopedSlots: _vm._u([
-                      {
-                        key: "default",
-                        fn: function(ref) {
-                          var errors = ref.errors
-                          return _c("div", {}, [
-                            _c("label", { attrs: { for: "password" } }, [
-                              _vm._v("Password")
-                            ]),
-                            _vm._v(" "),
-                            _c("input", {
-                              directives: [
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "span",
                                 {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.formRegister.password,
-                                  expression: "formRegister.password"
-                                }
-                              ],
-                              staticClass: "form-control",
-                              attrs: {
-                                type: "password",
-                                name: "password",
-                                placeholder: "password",
-                                id: "password"
-                              },
-                              domProps: { value: _vm.formRegister.password },
-                              on: {
-                                input: function($event) {
-                                  if ($event.target.composing) {
-                                    return
-                                  }
-                                  _vm.$set(
-                                    _vm.formRegister,
-                                    "password",
-                                    $event.target.value
-                                  )
-                                }
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c(
-                              "span",
-                              {
-                                staticClass: "invalid-feedback",
-                                attrs: { role: "alert" }
-                              },
-                              [_vm._v(_vm._s(errors[0]))]
-                            )
-                          ])
+                                  staticClass: "invalid-feedback",
+                                  attrs: { role: "alert" }
+                                },
+                                [_vm._v(_vm._s(errors[0]))]
+                              )
+                            ])
+                          }
                         }
-                      }
-                    ])
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _vm._m(1)
-            ]
-          )
+                      ])
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "form-group row" },
+                  [
+                    _c("ValidationProvider", {
+                      attrs: { name: "email", rules: "required|email" },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "default",
+                          fn: function(ref) {
+                            var errors = ref.errors
+                            return _c("div", {}, [
+                              _c("label", { attrs: { for: "email" } }, [
+                                _vm._v("Email")
+                              ]),
+                              _vm._v(" "),
+                              _c("input", {
+                                directives: [
+                                  {
+                                    name: "model",
+                                    rawName: "v-model",
+                                    value: _vm.formRegister.email,
+                                    expression: "formRegister.email"
+                                  }
+                                ],
+                                staticClass: "form-control",
+                                attrs: {
+                                  type: "email",
+                                  name: "email",
+                                  placeholder: "Email address",
+                                  id: "email"
+                                },
+                                domProps: { value: _vm.formRegister.email },
+                                on: {
+                                  input: function($event) {
+                                    if ($event.target.composing) {
+                                      return
+                                    }
+                                    _vm.$set(
+                                      _vm.formRegister,
+                                      "email",
+                                      $event.target.value
+                                    )
+                                  }
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "span",
+                                {
+                                  staticClass: "invalid-feedback",
+                                  attrs: { role: "alert" }
+                                },
+                                [_vm._v(_vm._s(errors[0]))]
+                              )
+                            ])
+                          }
+                        }
+                      ])
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "form-group row" },
+                  [
+                    _c("ValidationProvider", {
+                      attrs: { name: "password", rules: "required" },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "default",
+                          fn: function(ref) {
+                            var errors = ref.errors
+                            return _c("div", {}, [
+                              _c("label", { attrs: { for: "password" } }, [
+                                _vm._v("Password")
+                              ]),
+                              _vm._v(" "),
+                              _c("input", {
+                                directives: [
+                                  {
+                                    name: "model",
+                                    rawName: "v-model",
+                                    value: _vm.formRegister.password,
+                                    expression: "formRegister.password"
+                                  }
+                                ],
+                                staticClass: "form-control",
+                                attrs: {
+                                  type: "password",
+                                  name: "password",
+                                  placeholder: "password",
+                                  id: "password"
+                                },
+                                domProps: { value: _vm.formRegister.password },
+                                on: {
+                                  input: function($event) {
+                                    if ($event.target.composing) {
+                                      return
+                                    }
+                                    _vm.$set(
+                                      _vm.formRegister,
+                                      "password",
+                                      $event.target.value
+                                    )
+                                  }
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "span",
+                                {
+                                  staticClass: "invalid-feedback",
+                                  attrs: { role: "alert" }
+                                },
+                                [_vm._v(_vm._s(errors[0]))]
+                              )
+                            ])
+                          }
+                        }
+                      ])
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _vm._m(1)
+              ]
+            )
+          ])
         ])
-      ])
-    ])
+      ]
+    )
   ])
 }
 var staticRenderFns = [
